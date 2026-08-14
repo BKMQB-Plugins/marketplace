@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bkmqb-plugins.github.io/marketplace/schema/marketplace.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "plugins"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "plugins": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "summary", "trust", "repository", "latest", "capabilities"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 },
+          "summary": { "type": "string" },
+          "trust": { "enum": ["official", "verified", "community"] },
+          "repository": { "type": "string", "format": "uri" },
+          "commands": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+          "latest": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["version", "protocol", "download", "sha256"],
+            "properties": {
+              "version": { "type": "string", "minLength": 1 },
+              "protocol": { "type": "string", "minLength": 1 },
+              "download": { "type": "string", "format": "uri" },
+              "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+            }
+          },
+          "capabilities": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+        }
+      }
+    }
+  }
+}

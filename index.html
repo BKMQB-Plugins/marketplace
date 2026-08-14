@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="BKMQB 官方与社区插件市场">
+    <title>BKMQB Plugin Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <header class="hero">
+        <p class="eyebrow">BKMQB PLUGINS</p>
+        <h1>让 Bot 长出你需要的能力。</h1>
+        <p class="lead">每个插件都是独立的 WASM 包。源码在 GitHub，产物从 Release 获取，权限在安装前公开展示。</p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/BKMQB-Plugins/plugin-template">开发插件</a>
+          <a class="button" href="https://github.com/BKMQB-Plugins/marketplace">查看索引</a>
+        </div>
+      </header>
+
+      <section class="catalog" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">MARKETPLACE</p>
+            <h2 id="catalog-title">插件目录</h2>
+          </div>
+          <label class="search">
+            <span class="sr-only">搜索插件</span>
+            <input id="search" type="search" placeholder="搜索名称、命令或能力">
+          </label>
+        </div>
+        <div id="plugins" class="plugin-grid" aria-live="polite"></div>
+        <p id="status" class="status">正在读取市场索引…</p>
+      </section>
+    </main>
+
+    <template id="plugin-template">
+      <article class="plugin-card">
+        <div class="card-top">
+          <span class="trust"></span>
+          <span class="version"></span>
+        </div>
+        <h3></h3>
+        <p class="summary"></p>
+        <div class="commands"></div>
+        <details>
+          <summary>查看请求能力</summary>
+          <ul class="capabilities"></ul>
+        </details>
+        <div class="card-actions">
+          <a class="button primary download">下载</a>
+          <a class="button source">源码</a>
+        </div>
+        <code class="hash"></code>
+      </article>
+    </template>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
