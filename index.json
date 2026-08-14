@@ -2,7 +2,8 @@
   "schema_version": 1,
   "plugins": [
     {
-      "id": "io.github.bkmqb-community.github-issue",
+      "slug": "github-issue",
+      "plugin_id": "io.github.bkmqb-community.github-issue",
       "name": "GitHub Issue Reporter",
       "summary": "通过聊天命令管理仓库别名并创建 GitHub Issue",
       "trust": "official",

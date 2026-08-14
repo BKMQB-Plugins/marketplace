@@ -14,7 +14,7 @@ let plugins = [];
 function render(query = "") {
   const normalized = query.trim().toLowerCase();
   const visible = plugins.filter((plugin) =>
-    [plugin.id, plugin.name, plugin.summary, ...plugin.commands, ...plugin.capabilities]
+    [plugin.slug, plugin.plugin_id, plugin.name, plugin.summary, ...plugin.commands, ...plugin.capabilities]
       .join(" ")
       .toLowerCase()
       .includes(normalized),
