@@ -8,12 +8,12 @@
       "summary": "通过聊天命令管理仓库别名并创建 GitHub Issue",
       "trust": "official",
       "repository": "https://github.com/BKMQB-Plugins/github-issue",
-      "commands": ["whoami", "aliasRepo", "issue"],
+      "commands": ["whoami", "aliasrepo", "issue"],
       "latest": {
-        "version": "0.2.3",
+        "version": "0.2.4",
         "protocol": ">=1.1,<2.0",
-        "download": "https://github.com/BKMQB-Plugins/github-issue/releases/download/v0.2.3/io.github.bkmqb-community.github-issue-0.2.3.bkm-plugin",
-        "sha256": "b1fec095e309aed2bf7235902a9f49ba177e5c7767b98a8c6a5c07da68b0a1b5"
+        "download": "https://github.com/BKMQB-Plugins/github-issue/releases/download/v0.2.4/io.github.bkmqb-community.github-issue-0.2.4.bkm-plugin",
+        "sha256": "c4821ad398652238f647f0883849bb665fa83bd66e599c1452555065bc98a2a3"
       },
       "capabilities": [
         "message.reply",
