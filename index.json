@@ -10,10 +10,10 @@
       "repository": "https://github.com/BKMQB-Plugins/github-issue",
       "commands": ["whoami", "aliasrepo", "issue"],
       "latest": {
-        "version": "0.2.5",
+        "version": "0.2.6",
         "protocol": ">=1.2,<2.0",
-        "download": "https://github.com/BKMQB-Plugins/github-issue/releases/download/v0.2.5/io.github.bkmqb-community.github-issue-0.2.5.bkm-plugin",
-        "sha256": "46a9fdd665aa15d5d0f90deaaf58d6d63cb804c3f62eb820f9b8434e8ebeeae3"
+        "download": "https://github.com/BKMQB-Plugins/github-issue/releases/download/v0.2.6/io.github.bkmqb-community.github-issue-0.2.6.bkm-plugin",
+        "sha256": "afe3c5e9855220067ddfce2c08fcfb2e54f6e6c068dae06ca3077584be0e7343"
       },
       "capabilities": [
         "message.reply",
