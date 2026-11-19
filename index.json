@@ -22,6 +22,26 @@
         "http.host.api.github.com:443",
         "http.credential.github_issue"
       ]
+    },
+    {
+      "slug": "custom-reply",
+      "plugin_id": "dev.bkm.custom-reply",
+      "name": "自定义回复",
+      "summary": "按关键词或正则回复文本或带网页按钮的 QQ Markdown",
+      "trust": "official",
+      "repository": "https://github.com/BKMQB-Plugins/custom-reply",
+      "commands": [],
+      "latest": {
+        "version": "0.1.0",
+        "protocol": ">=1.7,<2.0",
+        "download": "https://github.com/BKMQB-Plugins/custom-reply/releases/download/v0.1.0/dev.bkm.custom-reply-0.1.0.bkm-plugin",
+        "sha256": "a3625b22cdd39b9ab4787ecbf9913fa0469bad726738ffd9d9fa2bbba316a4ae"
+      },
+      "capabilities": [
+        "event.extension.qq.official.raw",
+        "message.reply",
+        "qq.markdown.reply"
+      ]
     }
   ]
 }
